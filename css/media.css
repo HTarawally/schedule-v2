@@ -1,0 +1,36 @@
+@media only screen and (max-device-width: 1380px) {
+  body {
+    font-size: 0.8em; }
+
+  h1, .field {
+    height: 40px; } }
+@media only screen and (max-width: 980px) {
+  form {
+    width: 49.2% !important; }
+
+  form:nth-child(3) {
+    margin-left: 0; } }
+@media only screen and (max-device-width: 980px) and (orientation: portrait) {
+  header {
+    padding: 0; }
+
+  h1 {
+    height: 24px; }
+
+  h1, .field {
+    display: block;
+    width: 94%;
+    margin: 0; } }
+@media only screen and (max-device-width: 680px) {
+  body {
+    font-size: 0.65em; }
+
+  form {
+    width: 100% !important;
+    margin: 0 !important; } }
+@media only screen and (max-height: 680px) {
+  #console {
+    position: static;
+    margin-top: 5em; } }
+
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,178 @@
+/* CSS Document */
+* {
+  transition: all 0.6s;
+}
+
+body {
+  background: #09F url(../images/bg.png) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #000;
+}
+
+header {
+  padding-left: 10%;
+  font-size: 0.9em;
+}
+
+/* side pane with the day of the week in it */
+h1 {
+  font-size: 1em;
+  width: 8.4%;
+  text-align: center;
+}
+
+/* div that contains the schedule for the day */
+.field {
+  width: 84.5%;
+  position: relative;
+}
+
+.field, h1 {
+  background: rgba(255, 0, 0, 0.05);
+  height: 50px;
+}
+
+#forms {
+  background: rgba(0, 0, 0, 0.15);
+  width: 100%;
+  margin-bottom: 0;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 1.5%;
+}
+
+/* div containing links to refresh, delete all etc... */
+#misc a, #misc p, #misc button {
+  float: left;
+  margin-left: 1.5%;
+}
+
+button, input[type=submit] {
+  font-size: 1em;
+  padding: 0.2em 0.8em;
+  background: rgba(0, 0, 0, 0.05);
+  color: #e7e7e7;
+  cursor: pointer;
+}
+button:hover, input[type=submit]:hover {
+  font-size: 1.1em;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 1.5%;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+fieldset > div, input[type=submit] {
+  margin: 1.6% 2.5% !important;
+  width: 95%;
+}
+
+select, input[type=text] {
+  padding: 2px 5px;
+}
+
+#formHolder {
+  padding: 0 1.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #e7e7e7;
+}
+
+a:hover {
+  font-size: 1.1em;
+}
+
+/* link containing the actual task */
+a.task {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+a.task:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+a.finished {
+  color: #222021;
+}
+
+/* Set the width of each task both depending on it's duration */
+.duration1 {
+  width: 9.09%;
+}
+
+.duration2 {
+  width: 18.18%;
+}
+
+.duration3 {
+  width: 27.27%;
+}
+
+/* set the starting position of the element depending on it's start time */
+.start1 {
+  left: 0%;
+}
+
+.start2 {
+  left: 9.09%;
+}
+
+.start3 {
+  left: 18.18%;
+}
+
+.start4 {
+  left: 27.26%;
+}
+
+.start5 {
+  left: 36.35%;
+}
+
+.start6 {
+  left: 45.44%;
+}
+
+.start7 {
+  left: 54.53%;
+}
+
+.start8 {
+  left: 63.62%;
+}
+
+.start9 {
+  left: 72.71%;
+}
+
+.start10 {
+  left: 81.8%;
+}
+
+.start11 {
+  left: 90.89%;
+}
+
+hr {
+  background: #074190;
+  height: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

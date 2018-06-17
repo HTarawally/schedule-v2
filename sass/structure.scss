@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import "includes.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+aside, section, nav, footer, header, main, article {
+	display: block;
+}
+
+/* definition for any seperated container */
+.seperated {
+	clear: both;
+	margin: 0.6% auto 0.6% auto;
+}
+
+/* definition for anything that contains floated elements */
+.container:before, .container:after {
+	content: "";
+	display: table;
+	width: 100%;
+}
+
+/* column definitions */
+.col {
+	float: left;
+	margin-left: 1.6%;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&.col1of12 {
+		width: colWidth(1, 12);
+	}
+
+	&.col2of12 {
+		width: colWidth(2, 12);
+	}
+
+	&.col3of12 {
+		width: colWidth(3, 12);
+	}
+
+	&.col4of12 {
+		width: colWidth(4, 12);
+	}
+
+	&.col5of12 {
+		width: colWidth(5, 12);
+	}
+
+	&.col6of12 {
+		width: colWidth(6, 12);
+	}
+
+	&.col7of12 {
+		width: colWidth(7, 12);
+	}
+
+	&.col8of12 {
+		width: colWidth(8, 12);
+	}
+
+	&.col9of12 {
+		width: colWidth(9, 12);
+	}
+
+	&.col10of12 {
+		width: colWidth(10, 12);
+	}
+
+	&.col11of12 {
+		width: colWidth(11, 12);
+	}
+}

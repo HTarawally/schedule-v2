@@ -1,0 +1,22 @@
+$width-small: 680px;
+$width-medium: 980px;
+$width-large: 1380px;
+$min-width: 320px;
+
+$background-link: rgba(0, 0, 0, 0.05);
+$background-link-hover: rgba(0, 0, 0, 0.1);
+
+@function colWidth($target, $container, $margin: 1.6%) {
+	$spaceWidth: $margin * (($container / $target) - 1);
+	$remainingWidth: 100% - $spaceWidth;
+
+	@return $remainingWidth * $target / $container;
+}
+
+@function durationWidth($hours, $totalHours: 12) {
+	@return 100% * $hours / ($totalHours - 1);
+}
+
+@function startPos($hours, $totalHours: 12) {
+	@return 100% * ($hours - 1) / ($totalHours - 1);
+}

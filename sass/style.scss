@@ -1,0 +1,198 @@
+@charset "utf-8";
+@import "includes.scss";
+
+* {
+	transition: all 0.6s;
+}
+
+body {
+	background: #09F url(../images/bg.png) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	min-width: $min-width;
+}
+
+header {
+	padding-left: 10%;
+	font-size: 0.9em;
+}
+
+/* side pane with the day of the week in it */
+h1 {
+	font-size: 1em;
+	width: 8.4%;
+	text-align: center;
+}
+
+/* div that contains the schedule for the day */
+.field {
+	width: 84.5%;
+	position: relative;
+}
+
+.field, h1 {
+	background: rgba(255, 0, 0, 0.05);
+	height: 50px;
+}
+
+#console {
+	background: rgba(0, 0, 0, 0.15);
+	width: 100%;
+	margin-bottom: 0;
+	position: fixed;
+	bottom: 0;
+	padding-bottom: 1.5%;
+}
+
+/* div containing links to refresh, delete all etc... */
+#misc {
+	a:first-child {
+		margin-left: 1.5%;
+	}
+
+	a, p, button {
+		float: left;
+		margin-left: 5%;
+	}
+}
+
+button, input[type=submit] {
+	font-size: 1em;
+	padding: 0.2em 0.8em;
+	background: $background-link;
+	color: #e7e7e7;
+	cursor: pointer;
+
+	&:hover {
+		font-size: 1.1em;
+		background: $background-link-hover;
+	}
+}
+
+fieldset {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 0 1.5%;
+
+	legend {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+}
+
+fieldset > div, input[type=submit] {
+	margin: 1.6% 2.5% !important;
+	width: 95%;
+}
+
+select, input[type=text] {
+	padding: 2px 5px;
+	max-width: 80%;
+}
+
+#formHolder {
+	padding: 0 1.5%;
+}
+
+a {
+	text-decoration: none;
+	color: #e7e7e7;
+
+	&:hover {
+		font-size: 1.1em;
+	}
+}
+
+a.task, h1 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* link containing the actual task */
+a.task {
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+	text-align: center;
+	background: $background-link;
+
+	&:hover {
+		background: $background-link-hover;
+	}
+
+	&.finished {
+		color: #222021;
+	}
+
+	/* Set the width of each task both depending on it's duration */
+	&.duration1 {
+		width: durationWidth(1);
+	}
+
+	&.duration2 {
+		width: durationWidth(2);
+	}
+
+	&.duration3 {
+		width: durationWidth(3);
+	}
+
+	/* set the starting position of the element depending on it's start time */
+	&.start1 {
+		left: startPos(1);
+	}
+
+	&.start2 {
+		left: startPos(2);
+	}
+
+	&.start3 {
+		left: startPos(3);
+	}
+
+	&.start4 {
+		left: startPos(4);
+	}
+
+	&.start5 {
+		left: startPos(5);
+	}
+
+	&.start6 {
+		left: startPos(6);
+	}
+
+	&.start7 {
+		left: startPos(7);
+	}
+
+	&.start8 {
+		left: startPos(8);
+	}
+
+	&.start9 {
+		left: startPos(9);
+	}
+
+	&.start10 {
+		left: startPos(10);
+	}
+
+	&.start11 {
+		left: startPos(11);
+	}
+}
+
+hr {
+	background: #074190;
+	height: 2px;
+}
+
+#error {
+	font-size: 1.2em;
+	color: #fff;
+	text-align: center;
+	background: fade-out(#074190, 0.4);
+}
