@@ -6,6 +6,9 @@
 
 ## About
 
+A rudimentary system for scheduling tasks that will be repeated on a weekly
+basis. 
+
 ## Requirements
 
 PHP version 5.0.0+, compiled with support for the MySQLi extension will be
