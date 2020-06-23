@@ -47,5 +47,9 @@ Using the system is pretty straightforward.
 To add a new item, look to the bottom left of the screen. Fill in the form
 and click "Add Item".
 
+<img src="../media/add_new_item_screenshot.png?raw=true" width="500" />
+
 Once an item is added, it can be edited. Simply click on your required item
 and the respective forms will appear at the bottom of the screen.
+
+<img src="../media/editing_screenshot.png?raw=true" width="500" />
