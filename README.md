@@ -7,7 +7,7 @@
 ## About
 
 A rudimentary system for scheduling tasks that will be repeated on a weekly
-basis. 
+basis.
 
 ## Requirements
 
@@ -41,3 +41,11 @@ database setup. Return back to your code edit and comment out the code you
 previously uncommented out and you are ready to go.
 
 ## Usage
+
+Using the system is pretty straightforward.
+
+To add a new item, look to the bottom left of the screen. Fill in the form
+and click "Add Item".
+
+Once an item is added, it can be edited. Simply click on your required item
+and the respective forms will appear at the bottom of the screen.
