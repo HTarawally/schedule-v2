@@ -116,7 +116,7 @@
 		$query = mysqli_query($dbconnect, $sql);
 		$result = mysqli_fetch_assoc($query);
 
-		$finished = $result["finished"] == NULL ? 'N' : $result["finished"];
+		$finished = is_null($result) || is_null($result["finished"]) ? 'N' : $result["finished"];
 
 		// display task
 		echo "<a class='task";
@@ -193,9 +193,9 @@
 	{
 		global $dbconnect;
 
-		$deleteTimes="DELETE * FROM times";
-		$deleteDone="DELETE * FROM done";
-		$deleteDeletedTimes="DELETE * FROM deletedtimes";
+		$deleteTimes="DELETE FROM times";
+		$deleteDone="DELETE FROM done";
+		$deleteDeletedTimes="DELETE FROM deletedTimes";
 
 		mysqli_query($dbconnect,$deleteTimes);
 		mysqli_query($dbconnect,$deleteDone);
