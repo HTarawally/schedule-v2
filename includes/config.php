@@ -5,13 +5,13 @@
 	$days = array("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday");
 
 	define("DBHOST", "localhost");
-	define("DBUSER", "user");
-	define("DBPASS", "password");
-	define("DBNAME", "database");
+	define("DBUSER", "stage");
+	define("DBPASS", "-LOgzYrzDIr5!:_");
+	define("DBNAME", "schedule_stage");
 
 	$dbconnect = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME) or die("Could not connect to the database");
 
-	$CreateTimes = "CREATE TABLE Times (
+	$CreateTimes = "CREATE TABLE times (
 		ID int(255) NOT NULL auto_increment,
 		day varchar(10) NOT NULL,
 		title varchar(50) NOT NULL,
@@ -20,7 +20,7 @@
 		Primary Key(ID)
 	)";
 
-	$CreateDeletedTimes = "CREATE TABLE DeletedTimes (
+	$CreateDeletedTimes = "CREATE TABLE deletedTimes (
 		ID int(255) NOT NULL,
 		day varchar(10) NOT NULL,
 		title varchar(50) NOT NULL,
@@ -29,7 +29,7 @@
 		Primary Key(ID)
 	)";
 
-	$CreateDone = "CREATE TABLE Done (
+	$CreateDone = "CREATE TABLE done (
 		ID int(255) NOT NULL,
 		finished char(1) NOT NULL,
 		date datetime NOT NULL,
